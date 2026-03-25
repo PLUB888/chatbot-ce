@@ -28,7 +28,7 @@ SessionLocal = sessionmaker(bind=engine)
 db = SessionLocal()
 
 # --- 3. ตั้งค่า Gemini API ---
-api_key = os.getenv("GEMINI_API_KEY")
+api_key = "AIzaSyBVktfLQz4m_gLTuAFgztoyTSNo2M7yeCI"
 if api_key:
     genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-2.5-flash')
